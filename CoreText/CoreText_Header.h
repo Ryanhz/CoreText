@@ -10,4 +10,13 @@
 #define CoreData_Header_h
 
 
+#ifdef __OBJC__
+
+#import "UIView+FrameAdjust.h"
+#import "Utils.h"
+#import <CoreText/CoreText.h>
+
+#endif
+
+
 #endif /* CoreData_Header_h */

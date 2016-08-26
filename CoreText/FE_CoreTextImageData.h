@@ -10,4 +10,9 @@
 
 @interface FE_CoreTextImageData : NSObject
 
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic) NSUInteger position;
+
+@property (nonatomic) CGRect imagePosition;
+
 @end

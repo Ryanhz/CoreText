@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CoreTextData.h"
+#import "FE_CoreTextData.h"
+#import "FE_CoreTextImageData.h"
+#import "FE_CoreTextLinkData.h"
 #import "FE_CTFrameParserConfig.h"
 
 
@@ -16,7 +18,9 @@
  */
 @interface FE_CTFrameParser : NSObject
 
-+ (CoreTextData *)parseContent:(NSString *)content config:(FE_CTFrameParserConfig *)config;
++ (FE_CoreTextData *)parseTemplateFile:(NSString *)path config:(FE_CTFrameParserConfig*)config;
+
++ (FE_CoreTextData *)parseContent:(NSAttributedString *)content config:(FE_CTFrameParserConfig *)config;
 
 
 

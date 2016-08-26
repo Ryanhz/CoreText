@@ -10,4 +10,8 @@
 
 @interface FE_CoreTextLinkData : NSObject
 
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *url;
+@property (nonatomic, assign) NSRange range;
+
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FE_CoreTextLinkData.h"
+#import "FE_CoreTextData.h"
 
 @interface FE_CoreTextUitls : NSObject
+
++ (FE_CoreTextLinkData *)touchLinkInView:(UIView *)view atPoint:(CGPoint)point data:(FE_CoreTextData *)data;
 
 @end
